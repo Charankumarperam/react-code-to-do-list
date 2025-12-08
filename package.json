@@ -1,0 +1,21 @@
+{
+  "name": "react-code-to-do-list-",
+  "version": "1.0.0",
+  "description": "// local storage as, with if-else\r     function saveTask(addtask){\r         let tasks;\r         if(localStorage.getItem('tasks')){\r             tasks=JSON.parse(localStorage.getItem('tasks'))\r         }\r         else{\r             tasks=[]\r         }\r         tasks.push(addtask)\r         localStorage.setItem('tasks',JSON.stringify(tasks))\r     }",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charankumarperam/react-code-to-do-list-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Charankumarperam/react-code-to-do-list-/issues"
+  },
+  "homepage": "https://github.com/Charankumarperam/react-code-to-do-list-#readme"
+}
