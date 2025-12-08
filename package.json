@@ -4,7 +4,7 @@
   "description": "// local storage as, with if-else\r     function saveTask(addtask){\r         let tasks;\r         if(localStorage.getItem('tasks')){\r             tasks=JSON.parse(localStorage.getItem('tasks'))\r         }\r         else{\r             tasks=[]\r         }\r         tasks.push(addtask)\r         localStorage.setItem('tasks',JSON.stringify(tasks))\r     }",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
