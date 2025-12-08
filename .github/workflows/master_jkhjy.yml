@@ -26,7 +26,6 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm install --save-dev jest
           npm run build --if-present
           npm run test --if-present
 
@@ -52,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_22EDCA2C393D49E6A33F0CB700B703AD }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C566B46D48374857903E714E1E17012C }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9F79538E2558423398C3994325B4B17E }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A1C37101215845D58F4D00F585B9E77F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C2091BEC7B7A43DE8AC04DB0F378D03C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_179A197DF07F45F0A494BE0998215C2F }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -63,5 +62,4 @@ jobs:
           app-name: 'jkhjy'
           slot-name: 'Production'
           package: .
-
           
